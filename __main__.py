@@ -1,16 +1,16 @@
-print("Ce code pemet de deteminer si un language L est un code ou non")
+from codage import *
+print("Ce code permet de déterminer si un langage L est un code ou non\n\n")
 
-L = ("00", "01", "110", "001") # Le language L a determiner si c'est un language ou pas
+L = ("00", "01", "110", "001")  # Le langage L à déterminer si c'est un code ou pas
 
-def isPrefix(u,v):
-    """
-        Determine si u est un prefixe de v
-        Params:
-            - u le mot a tester si c'est un prefixe ou non
-            - v le mot de test du prefixe
-        Returns:
-            - (-1) si ce n'est pas un prefixe
-            - (0) si u == v
-            - (1) si u est un prefixe de v
-    """
-    pass
+# Exemple de test
+for i in range(len(L)):
+    for j in range(len(L)):
+        if i != j:
+            result = isPrefix(L[i], L[j])
+            if result == 1:
+                print(f"{L[i]} est un préfixe de {L[j]}")
+            elif result == 0:
+                print(f"{L[i]} est égal à {L[j]}")
+            else:
+                print(f"{L[i]} n'est pas un préfixe de {L[j]}")

@@ -1,9 +1,9 @@
 # TODO List
 
 - [x] initialisation git
-- [ ] fonction isPrefix(u,v)
-  - [ ] tester pour chaque caractere de v si u est son prefixe 
-    - [ ] -1 non prefix , 0 egales , 1 prefix
+- [x] fonction isPrefix(u,v)
+  - [x] tester pour chaque caractere de v si u est son prefixe
+    - [x] -1 non prefix , 0 egales , 1 prefix
 - [ ] fonction residuel( M , L)
   - [ ] pour chaque elemet de M on verifie si c'est un residuel
     - [ ] on fait le test residuel pour chaque element de L
