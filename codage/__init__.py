@@ -33,7 +33,7 @@ def residuel(M, L):
 
 
 
-def analyse_code_language(L):
+def sardinas_patterson(L):
     """
     Fonction qui analyse le langage L et génère les résiduels successifs.
     Renvoie :
@@ -74,3 +74,10 @@ def analyse_code_language(L):
         n += 1
 
     return True
+
+def is_code_language(L):
+    residus = residuel(L,L)
+    residus.discard('')
+    if len(residus) == 0:
+        return True
+    return sardinas_patterson(L)
